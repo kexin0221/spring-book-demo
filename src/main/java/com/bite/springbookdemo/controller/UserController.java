@@ -13,10 +13,11 @@ public class UserController {
         if (!StringUtils.hasLength(name) || !StringUtils.hasLength(password)) {
             return false;
         }
-        if ("admin".equals(name) && "admin".equals(password)) {
-            session.setAttribute("userName", name);
-            return true;
-        }
+//        if ("admin".equals(name) && "admin".equals(password)) {
+//            session.setAttribute("userName", name);
+//            return true;
+//        }
+
         return false;
     }
 }
