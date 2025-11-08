@@ -1,6 +1,6 @@
 package com.bite.springbookdemo.controller;
 
-import com.bite.springbookdemo.mapper.BookInfo;
+import com.bite.springbookdemo.dao.BookInfo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
