@@ -22,8 +22,6 @@ public class BookController {
     }
 
     private List<BookInfo> mockData() {
-        // 模拟数据生成逻辑
-        // 此处省略具体实现，可参考 P87 的 mockData 方法
-        return List.of(); // 实际应返回模拟的图书列表
+        return List.of();
     }
 }
