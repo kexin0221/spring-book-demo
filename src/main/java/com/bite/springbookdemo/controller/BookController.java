@@ -1,6 +1,9 @@
 package com.bite.springbookdemo.controller;
 
 import com.bite.springbookdemo.dao.BookInfo;
+import com.bite.springbookdemo.service.BookService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
@@ -8,20 +11,44 @@ import java.util.List;
 @RequestMapping("/book")
 @RestController
 public class BookController {
-    @RequestMapping("/getList")
-    public List<BookInfo> getList() {
-        List<BookInfo> books = mockData();
-        for (BookInfo book : books) {
-            if (book.getStatus() == 1) {
-                book.setStatusCN("可借阅");
-            } else {
-                book.setStatusCN("不可借阅");
-            }
-        }
-        return books;
-    }
 
-    private List<BookInfo> mockData() {
-        return List.of();
+    @Autowired
+    private BookService bookService;
+
+//    @RequestMapping("/getList")
+//    public List<BookInfo> getList() {
+//        return bookService.getList();
+//    }
+
+    @RequestMapping("/addBook")
+    public String addBook(BookInfo bookInfo) {
+        //1. 参数校验
+        if (!StringUtils.hasLength(bookInfo.getBookName())) {
+            return "书名不能为空！";
+        }
+        if (!StringUtils.hasLength(bookInfo.getAuthor())) {
+            return "作者不能为空！";
+        }
+        if (bookInfo.getCount() == null) {
+            return "数量不能为空！";
+        }
+        if (bookInfo.getPrice() == null) {
+            return "价格不能为空！";
+        }
+        if (!StringUtils.hasLength(bookInfo.getPublish())) {
+            return "出版社不能为空！";
+        }
+        if (bookInfo.getStatus() == null) {
+            return "状态码不能为空！";
+        }
+        //2. 存储数据
+        //3. 返回结果
+        try {
+            bookService.addBook(bookInfo);
+            return "";
+        } catch (Exception e) {
+            return "添加图书发生异常！";
+        }
+
     }
 }
