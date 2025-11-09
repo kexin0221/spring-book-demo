@@ -1,38 +1,16 @@
-2025-11-08T20:43:48.442+08:00  INFO 38276 --- [main] c.b.s.SpringBookDemoApplication          : Starting SpringBookDemoApplication using Java 17.0.17 with PID 38276 (D:\code\java\spring-book-demo\target\classes started by MouKexin in D:\code\java\spring-book-demo)
-2025-11-08T20:43:48.444+08:00  INFO 38276 --- [main] c.b.s.SpringBookDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-11-08T20:43:49.087+08:00  INFO 38276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-08T20:43:49.096+08:00  INFO 38276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-08T20:43:49.096+08:00  INFO 38276 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-08T20:43:49.139+08:00  INFO 38276 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-08T20:43:49.139+08:00  INFO 38276 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 662 ms
-2025-11-08T20:43:49.485+08:00  INFO 38276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-08T20:43:49.490+08:00  INFO 38276 --- [main] c.b.s.SpringBookDemoApplication          : Started SpringBookDemoApplication in 1.475 seconds (process running for 2.13)
-2025-11-08T20:43:54.725+08:00  INFO 38276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-08T20:43:54.725+08:00  INFO 38276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-08T20:43:54.726+08:00  INFO 38276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-08T20:43:54.781+08:00  INFO 38276 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-08T20:43:54.890+08:00  INFO 38276 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@500e0527
-2025-11-08T20:43:54.891+08:00  INFO 38276 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-08T21:16:27.538+08:00  INFO 38276 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-08T21:16:28.351+08:00  INFO 38276 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-08T21:16:28.361+08:00  INFO 38276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-08T21:16:28.372+08:00  INFO 38276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-11-08T21:16:32.723+08:00  INFO 37484 --- [main] c.b.s.SpringBookDemoApplication          : Starting SpringBookDemoApplication using Java 17.0.17 with PID 37484 (D:\code\java\spring-book-demo\target\classes started by MouKexin in D:\code\java\spring-book-demo)
-2025-11-08T21:16:32.725+08:00  INFO 37484 --- [main] c.b.s.SpringBookDemoApplication          : No active profile set, falling back to 1 default profile: "default"
-2025-11-08T21:16:33.394+08:00  INFO 37484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-11-08T21:16:33.404+08:00  INFO 37484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-11-08T21:16:33.405+08:00  INFO 37484 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
-2025-11-08T21:16:33.448+08:00  INFO 37484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-11-08T21:16:33.448+08:00  INFO 37484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 690 ms
-2025-11-08T21:16:33.788+08:00  INFO 37484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-11-08T21:16:33.793+08:00  INFO 37484 --- [main] c.b.s.SpringBookDemoApplication          : Started SpringBookDemoApplication in 1.493 seconds (process running for 1.904)
-2025-11-08T21:16:36.985+08:00  INFO 37484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-08T21:16:36.985+08:00  INFO 37484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-11-08T21:16:36.986+08:00  INFO 37484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-11-08T21:19:35.950+08:00  INFO 37484 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-11-08T21:19:36.404+08:00  INFO 37484 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7197e04c
-2025-11-08T21:19:36.408+08:00  INFO 37484 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-11-08T21:19:51.688+08:00  INFO 37484 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-11-08T21:19:51.827+08:00  INFO 37484 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-11-08T21:19:51.830+08:00  INFO 37484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-11-08T21:19:51.835+08:00  INFO 37484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-11-09T21:03:03.638+08:00  INFO 24168 --- [main] c.b.s.SpringBookDemoApplication          : Starting SpringBookDemoApplication using Java 17.0.17 with PID 24168 (D:\code\java\spring-book-demo\target\classes started by MouKexin in D:\code\java\spring-book-demo)
+2025-11-09T21:03:03.642+08:00  INFO 24168 --- [main] c.b.s.SpringBookDemoApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-11-09T21:03:04.323+08:00  INFO 24168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-11-09T21:03:04.338+08:00  INFO 24168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-11-09T21:03:04.338+08:00  INFO 24168 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-09T21:03:04.382+08:00  INFO 24168 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-11-09T21:03:04.383+08:00  INFO 24168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 700 ms
+2025-11-09T21:03:04.746+08:00  INFO 24168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-11-09T21:03:04.752+08:00  INFO 24168 --- [main] c.b.s.SpringBookDemoApplication          : Started SpringBookDemoApplication in 1.588 seconds (process running for 2.081)
+2025-11-09T21:03:35.170+08:00  INFO 24168 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-09T21:03:35.171+08:00  INFO 24168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-11-09T21:03:35.173+08:00  INFO 24168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-11-09T21:03:35.301+08:00  INFO 24168 --- [http-nio-8080-exec-1] c.b.s.controller.BookController          : 添加图书, request: BookInfo(id=null, bookName=图书2, author=作者2, count=45, price=50, publish=出版社2, status=1, statusCN=null, createTime=null, updateTime=null)
+2025-11-09T21:03:35.345+08:00  INFO 24168 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-11-09T21:03:35.787+08:00  INFO 24168 --- [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dac45c2
+2025-11-09T21:03:35.793+08:00  INFO 24168 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
