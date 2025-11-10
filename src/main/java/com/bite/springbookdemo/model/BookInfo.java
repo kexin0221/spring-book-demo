@@ -1,4 +1,4 @@
-package com.bite.springbookdemo.dao;
+package com.bite.springbookdemo.model;
 
 import lombok.Data;
 import java.math.BigDecimal;

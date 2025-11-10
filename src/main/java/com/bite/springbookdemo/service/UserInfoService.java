@@ -1,6 +1,6 @@
 package com.bite.springbookdemo.service;
 
-import com.bite.springbookdemo.dao.UserInfo;
+import com.bite.springbookdemo.model.UserInfo;
 import com.bite.springbookdemo.mapper.UserInfoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

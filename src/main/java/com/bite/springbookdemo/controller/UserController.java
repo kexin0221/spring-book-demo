@@ -1,6 +1,6 @@
 package com.bite.springbookdemo.controller;
 
-import com.bite.springbookdemo.dao.UserInfo;
+import com.bite.springbookdemo.model.UserInfo;
 import com.bite.springbookdemo.service.UserInfoService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;

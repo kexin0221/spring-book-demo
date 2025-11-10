@@ -1,6 +1,6 @@
 package com.bite.springbookdemo.mapper;
 
-import com.bite.springbookdemo.dao.UserInfo;
+import com.bite.springbookdemo.model.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

@@ -1,6 +1,7 @@
 package com.bite.springbookdemo.controller;
 
-import com.bite.springbookdemo.dao.BookInfo;
+import com.bite.springbookdemo.model.BookInfo;
+import com.bite.springbookdemo.model.ResponseResult;
 import com.bite.springbookdemo.service.BookService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,6 +59,10 @@ public class BookController {
             log.error("添加图书异常, e: {}", String.valueOf(e));
             return "添加图书发生异常！";
         }
+    }
+
+    @RequestMapping("getListByPage")
+    public ResponseResult<BookInfo> getListByPage(PageRequest pageRequest) {
 
     }
 }

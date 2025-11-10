@@ -57,15 +57,28 @@
 
             <div class="form-group" style="text-align: right">
                 <button type="button" class="btn btn-info btn-lg" onclick="add()">确定</button>
-                <button type="button" class="btn btn-secondary btn-lg" onclick="javascript:history.back()">返回</button>
+                <button type="button" class="btn btn-secondary btn-lg" onclick="history.back()">返回</button>
             </div>
         </form>
     </div>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script>
         function add() {
-            alert("添加成功");
-            location.href = "book_list.html";
+            // 前端也需要进行参数校验，此处省略
+            // 提交请求到后端
+            $.ajax({
+                type: "post",
+                url: "/book/addBook",
+                data: $("#addBook").serialize(),
+                success:function (result) {
+                    if (result === "") {
+                        // 添加图书成功
+                        location.href = "book_list.html";
+                    } else {
+                        alert(result);
+                    }
+                }
+            });
         }
     </script>
 </body>
