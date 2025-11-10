@@ -1,21 +1,32 @@
 package com.bite.springbookdemo.enums;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
 public enum BookStatusEnum {
     DELETED(0, "删除"),
     NORMAL(1, "正常"),
     FORBIDDEN(2, "不允许借阅");
 
-    private final Integer code;
-    private final String desc;
+    private Integer code;
+    private String desc;
 
     BookStatusEnum(Integer code, String desc) {
         this.desc = desc;
         this.code = code;
+    }
+
+    public Integer getCode() {
+        return code;
+    }
+
+    public void setCode(Integer code) {
+        this.code = code;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
     public BookStatusEnum getStatusByCode(Integer code) {
