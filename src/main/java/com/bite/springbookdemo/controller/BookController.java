@@ -1,6 +1,7 @@
 package com.bite.springbookdemo.controller;
 
 import com.bite.springbookdemo.model.BookInfo;
+import com.bite.springbookdemo.model.PageRequest;
 import com.bite.springbookdemo.model.ResponseResult;
 import com.bite.springbookdemo.service.BookService;
 import lombok.extern.slf4j.Slf4j;
