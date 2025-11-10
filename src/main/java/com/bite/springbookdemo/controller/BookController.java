@@ -64,6 +64,6 @@ public class BookController {
 
     @RequestMapping("getListByPage")
     public ResponseResult<BookInfo> getListByPage(PageRequest pageRequest) {
-
+        return bookService.getListByPage(pageRequest);
     }
 }

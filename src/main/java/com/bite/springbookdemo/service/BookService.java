@@ -36,6 +36,6 @@ public class BookService {
                 bookInfo.setStatusCN("不可借阅");
             }
         }
-        return new ResponseResult<>(count, bookInfos);
+        return new ResponseResult<>(count, bookInfos, pageRequest);
     }
 }

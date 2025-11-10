@@ -12,4 +12,5 @@ import java.util.List;
 public class ResponseResult<T> {
     private Integer total;
     private List<T> records;
+    private PageRequest pageRequest;
 }
