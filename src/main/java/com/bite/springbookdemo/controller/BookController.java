@@ -18,11 +18,6 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-//    @RequestMapping("/getList")
-//    public List<BookInfo> getList() {
-//        return bookService.getList();
-//    }
-
     @RequestMapping("/addBook")
     public String addBook(BookInfo bookInfo) {
         log.info("添加图书, request: {}", bookInfo);
