@@ -16,9 +16,6 @@ public class BookService {
     @Autowired
     private BookInfoMapper bookInfoMapper;
 
-//    public List<BookInfo> getList() {
-//    }
-
     public void addBook(BookInfo bookInfo) {
         bookInfoMapper.addBook(bookInfo);
     }
@@ -37,5 +34,13 @@ public class BookService {
             }
         }
         return new ResponseResult<>(count, bookInfos, pageRequest);
+    }
+
+    public BookInfo queryBookById(Integer bookId) {
+        return bookInfoMapper.queryBookById(bookId);
+    }
+
+    public void updateBook(BookInfo bookInfo) {
+        bookInfoMapper.updateBook(bookInfo);
     }
 }

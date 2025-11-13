@@ -5,6 +5,7 @@ import com.bite.springbookdemo.model.PageRequest;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -20,4 +21,9 @@ public interface BookInfoMapper {
 
     @Select("select count(1) from book_info where status != 0")
     Integer count();
+
+    @Select("select * from book_info where status != 0 and id = #{}")
+    BookInfo queryBookById(Integer bookId);
+
+    Integer updateBook(BookInfo bookInfo);  // 使用XML动态SQL
 }

@@ -57,8 +57,26 @@ public class BookController {
         }
     }
 
-    @RequestMapping("getListByPage")
+    @RequestMapping("/getListByPage")
     public ResponseResult<BookInfo> getListByPage(PageRequest pageRequest) {
         return bookService.getListByPage(pageRequest);
+    }
+
+    @RequestMapping("/queryBookById")
+    public BookInfo queryBookById(Integer bookId) {
+        log.info("查询图书信息，bookId: {}", bookId);
+        return bookService.queryBookById(bookId);
+    }
+
+    @RequestMapping("/updateBook")
+    public String updateBook(BookInfo bookInfo) {
+        log.info("修改图书, bookInfo: {}", bookInfo);
+        try {
+            bookService.updateBook(bookInfo);
+            return "";
+        } catch (Exception e) {
+            log.error("修改图书发生异常，e: ", e);
+            return "修改图书发生异常...";
+        }
     }
 }
